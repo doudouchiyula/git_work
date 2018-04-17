@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1%p"
+    android:keyHeight="42dp"
+    android:keyWidth="32%p"
+    >
+    <!--从上往下第一行-->
+    <Row>
+        <Key
+            android:codes="-20"
+            android:keyLabel="V"
+            android:keyWidth="65%p" />
+        <Key
+            android:codes="-21"
+            android:keyLabel="delete"
+            />
+    </Row>
+    <!--从上往下第二行 8,9,0-->
+    <Row>
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="49"
+            android:keyLabel="0" />
+    </Row>
+    <!--从上往下第三行 5,6,7-->
+    <Row>
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+    </Row>
+    <!--从上往下第四行 1,2,完成-->
+    <Row>
+        <Key
+            android:codes="50"
+            android:keyLabel="1" />
+        <Key
+            android:codes="51"
+            android:keyLabel="2" />
+        <Key
+            android:codes="-22"
+            android:keyLabel="完成" />
+    </Row>
+    <!--从上往下第五行 abc,3,,4-->
+    <Row>
+        <Key
+            android:codes="-23"
+            android:keyLabel="abc" />
+        <Key
+            android:codes="52"
+            android:keyLabel="3" />
+        <Key
+            android:codes="53"
+            android:keyLabel="4" />
+    </Row>
+
+</Keyboard>
