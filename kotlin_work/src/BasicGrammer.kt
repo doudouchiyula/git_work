@@ -1,7 +1,7 @@
+
 fun main(args: Array<String>) {
     var sum1 = sum1(2, 6);
-    print()
-    0
+    print(sum1)
 
 }
 
