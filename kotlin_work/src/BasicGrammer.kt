@@ -1,7 +1,22 @@
+import java.util.*
+
+var string: String? = null
 
 fun main(args: Array<String>) {
-    var sum1 = sum1(2, 6);
-    print(sum1)
+    val sum1 = sum1(2, 6);
+    println(sum1)
+    var sum2 = sum2(4, 8)
+    println("sum2= $sum2")
+    sum2 += sum2
+    println("sum2===" + sum2)
+    println("${sum3(12, 88)}")
+    println(string?.length ?: -2)
+//    println(string!!.length)
+//    println(string!!.toInt())
+    var x = parseInt("ii")?:9
+    var y = parseInt(2)?:9
+    println(x*y)
+
 
 }
 
@@ -17,3 +32,8 @@ public fun sum3(a: Int, b: Int): Int {
 }
 
 public fun sum4(a: Int, b: Int): Int = a + b
+
+fun parseInt(obj: Any): Int ?{
+    if(obj is String) return obj.length
+    return null
+}
