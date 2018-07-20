@@ -1,5 +1,3 @@
-import java.util.*
-
 var string: String? = null
 
 fun main(args: Array<String>) {
@@ -16,8 +14,6 @@ fun main(args: Array<String>) {
     var x = parseInt("ii")?:9
     var y = parseInt(2)?:9
     println(x*y)
-
-
 }
 
 fun sum1(a: Int, b: Int): Int {
