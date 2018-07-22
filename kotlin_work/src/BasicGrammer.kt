@@ -15,13 +15,10 @@ fun main(args: Array<String>) {
 //    println(string!!.length)
 //    println(string!!.toInt())
 
-    var x = parseInt("ii")?:9
-    var y = parseInt(2)?:9
-    println(x*y)
-
     var x = parseInt("ii") ?: 9
     var y = parseInt(2) ?: 9
     println(x * y)
+
 
     val map = mapOf(1 to "kotlin--", 2 to "hard to learn", "test_3" to "test_key", "test_4" to "test_value")
     println(map.mapValues { (key, value) -> "$key -> $value" })
@@ -58,6 +55,7 @@ fun main(args: Array<String>) {
     labelReturn3()
     println("----------------")
     labelReturn4()
+}
 
 fun sum1(a: Int, b: Int): Int {
     return a + b
