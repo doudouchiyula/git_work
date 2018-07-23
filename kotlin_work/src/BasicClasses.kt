@@ -1,8 +1,10 @@
+import aboutclass.Person
 import aboutclass.School
 import aboutclass.swap
 
 fun main(args: Array<String>) {
     val school = School("lili", "luyisi55")
+
 //    println(school.size)
     println(school.converToStr())
     println(school.covertTostr1())
@@ -16,7 +18,22 @@ fun main(args: Array<String>) {
     mutableListOf.swap(1, 2)
 
     println("index1=$mutableListOf[1]")
-    println("index1=$mutableListOf[2]")
+    println("index2=$mutableListOf[2]")
 
+    val lili1 = Person("lili")
+    lili1.age=10;
 
+    val lili2 = Person("lili")
+    lili2.age = 20
+    println("lili1=="+lili1.age)
+    println("lili2=="+lili2.age)
+    println("：：："+(lili1==lili2))//true
+    println("：：："+(lili1===lili2))//false
+
+    val lucy = Person("lucy","女")
+    val copy = lucy.copy("lilei")
+    println("copy=="+copy.name)
+
+    println(School.grade().grade())
+    println(school.clazz().clazz())
 }

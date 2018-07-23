@@ -23,6 +23,19 @@ class School(name: String, val lastName: String) : Base(name.capitalize().also {
         return size.toString()
     }
 
+    class grade{//外部类类名.内部类类名即可
+        fun grade() {
+            println("grade")
+        }
+    }
+
+    inner class clazz {//外部类对象.内部类对象
+        fun clazz() {
+            println("clazz")
+        }
+    }
+
+
 
 }
 
