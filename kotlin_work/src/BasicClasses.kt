@@ -1,3 +1,4 @@
+import aboutclass.Fruits
 import aboutclass.Person
 import aboutclass.School
 import aboutclass.swap
@@ -21,19 +22,36 @@ fun main(args: Array<String>) {
     println("index2=$mutableListOf[2]")
 
     val lili1 = Person("lili")
-    lili1.age=10;
+    lili1.age = 10;
 
     val lili2 = Person("lili")
     lili2.age = 20
-    println("lili1=="+lili1.age)
-    println("lili2=="+lili2.age)
-    println("：：："+(lili1==lili2))//true
-    println("：：："+(lili1===lili2))//false
+    println("lili1==" + lili1.age)
+    println("lili2==" + lili2.age)
+    println("：：：" + (lili1 == lili2))//true
+    println("：：：" + (lili1 === lili2))//false
 
-    val lucy = Person("lucy","女")
+    val lucy = Person("lucy", "女")
     val copy = lucy.copy("lilei")
-    println("copy=="+copy.name)
+    println("copy==" + copy.name)
 
     println(School.grade().grade())
     println(school.clazz().clazz())
+
+    val fruits = Fruits.valueOf("orige")
+    println(fruits)
+    for (value in Fruits.values()) {
+        println(value)
+    }
+
+    fool()
+
+}
+
+fun fool() {
+    var obj = object {
+        var a: Int = 0
+        var b: Int = 1
+    }
+    println(obj.a + obj.b)
 }

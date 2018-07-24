@@ -1,0 +1,4 @@
+package aboutclass
+
+object Audio {
+}
